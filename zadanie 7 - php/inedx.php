@@ -80,13 +80,55 @@ for ($i = 2; $i <= sqrt($n); $i++){
 }
 }
 
-function czyJestPodzielna(int $n1 = 1,int $n2 = 100):int {
+function czyJestPrzedziale(int $n1 = 1,int $n2 = 100):int {
     for ($i = $n1; $i <= $n2; $i++){
         if(czyPierwsza($i)){
             echo $i . " ";
         }
     }
 }
+
+
+$osoby = [
+    ["imie" => "jan", "wiek" => 20],
+    ["imie" => "anna", "wiek" => 25],
+    ["imie" => "piord", "wiek" => 30]
+
+];
+
+$array = [1,2,3,4,5]
+
+function  OblicczStatystyki(array $liczby):array{
+    $suma = array_sum($liczby);
+    $srednia = $suma / count($liczby);
+    return [
+        'srednia' => $srednia
+    ]
+}
+
+
+function  Obliczsume(array $liczby):int{
+    $suma = 0
+    foreach($liczba as $liczba){
+        $suma+= $liczba;
+    }
+   return $suma;
+    
+}
+
+function  Obliczsrednia(array $liczby):int{
+    $najwieksza = 0
+    foreach($liczba as $liczba){
+        if($liczba > $najwieksza){
+            $najwieksza
+        }
+        $suma+= $liczba;
+    }
+   return $suma;
+    
+}
+
+
 
 
 ?>

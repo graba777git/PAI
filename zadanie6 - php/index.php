@@ -91,7 +91,7 @@ for( $i=0; $i <count($array2D); $i++){
 
 }
 
-//zadanie sumuj wszsytkie elementy z tablicy aray4x4
+//zadanie sumuj wszsytkie elementy z tablicy array4x4
 
 $suma = 0;
 for($i = 0; $i < 4; $i++){
@@ -100,4 +100,21 @@ for($i = 0; $i < 4; $i++){
     }
 }
 echo "suma:" . $suma;
+
+
+//sumuj wsyszkie wartosci w ramach jednej komulny a jej rezultat ma byc zapisany do tablicy jedno wymiarowej
+
+$suma = 0;
+for( $i=0; $i <count($array4x4); $i++){
+    for( $j=0; $j <count($array4x4[$i]); $j++){
+        if($array4x4[$i][$j] === $array4x4[$i][0]){
+        $suma += $array4x4 [$i][$j];
+        
+    }
+    
+}
+echo $suma ."<br>";
+}
+
+
 ?>
