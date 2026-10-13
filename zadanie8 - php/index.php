@@ -1,4 +1,4 @@
-<?php
+//<?php
 //zadanie 1 z przdzialu <0,1000> wyswietl liczby podzielne przez 3 i 7
 // for ($i = 0; $i <= 1000; $i++){
 //     if ($i % 3 == 0 or $i % 7 == 0) {
@@ -46,7 +46,13 @@
 //     }
 //     echo"<br>";
 // }
+
+
     
     
     
-    ?>
+    //?>
+
+
+
+
