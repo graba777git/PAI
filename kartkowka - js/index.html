@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="imie"> imie </label> <br>
+        <input id="imie" class="pole"><br>
+
+         <label for="Email"> Email</label> <br>
+        <input id="Email" class="pole"><br>
+
+        <label for="akceptuje"> akceptuje regulamin </label> <br>
+        <input id="akceptuje" type="radio"><br>
+
+         <button type="button" id="btn">Zapisz</button>
+
+         <P id = "Komunikat"></p>
+    </form>
+    <script>
+        let btn = document.getElementById("btn");
+
+        btn.addEventListener("click" , function(event){
+            event.preventDefault();
+        
+
+        let akceptuje = document.getElementById("akceptuje").value
+        let Komunikat = document.getElementById("Komunikat")
+        let imie = document.getElementById("imie").value
+        let Email = document.getElementById("Email").value
+        let pole = document.querySelector(".pole")
+
+
+        if(akceptuje == "on"){
+            Komunikat.textContent = "witaj" + name + "!" + "potwierdzenie wyslemy na " + Email.value + ".";
+            console.log(pole)
+            pole.style.color = 'green'
+            pole.style.border = 2
+        } else{
+            console.log(akceptuje)
+            Komunikat.textContent = "musisz akcpetowac regulamin" 
+        }
+
+        })
+
+    </script>
+    
+</body>
+</html>
