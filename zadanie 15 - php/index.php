@@ -25,7 +25,19 @@ setcookie($name, $value, time() + (86400*30), "/");
     } else {
         echo "ciacho". $name . "nie jest ustawione!";
         }
+
+        //modyfikacja ciaszteczka
+    setcookie($name,"nowa wartosc" , $value, time() + (86400*30), "/");
+    //usuwanie
+    setcookie($name, " " , time() -3600,"/")
+    //czy ciasteczka sa wlaczone
+    if(count($_COOKIE) > 0){
+        echo "ciasteczka wlaczone";
+    }else{
+        echo "ciasteczko wylaczone";
+    }
+?>
     
-    ?>
+
 </body>
 </html>

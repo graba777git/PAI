@@ -27,6 +27,10 @@ $_SESSION["favcolor"] = "red";
 echo "<br>";
 print_r($_SESSION);
 
+echo "<br>"
+session_unset();
+session_destroy();
+
 ?>
     
 </body>
