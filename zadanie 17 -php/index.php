@@ -58,6 +58,7 @@
 
         <?php
             if(!empty(($_SESSION['koszyk']))){
+
                 foreach($_SESSION['koszyk'] as $product){
                     echo "<tr>";
                     echo "<td>" . $product['name'] . "</td>";
