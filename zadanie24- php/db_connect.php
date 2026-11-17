@@ -1,8 +1,9 @@
 <?php
-$conn = mysql_connect("localhost", "root", "");
-if (!$conn){
-    die("blad polonczenia");
-}
 
-$db_ok = mysql_select_db($conn, "gry_db");
+//tworzenie połączenia 
+$conn = mysqli_connect("localhost", "root", "", "gry_db");
+
+if($conn->connect_error){
+    die("Połączenie nie udane: " . $conn->connect_error);
+}
 ?>
