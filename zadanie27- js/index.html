@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="n">
+    <button onclick="Generuj()">Generuj</button>
+
+
+    <div id="tabela"></div>
+
+    <script>
+
+
+const przycisk = document.getElementById("generuj");
+
+przycisk.addEventListener("click", function () {
+    const blok = document.getElementById("tabela");
+    const n = parseInt(document.getElementById("n").value);
+
+    blok.innerHTML = "";
+ 
+    if (!(n >= 1 && n <= 10)) {
+        blok.textContent = "Podaj liczbę od 1 do 10";
+        return;
+    }
+
+    const table = document.createElement("table");
+
+    for (let i = 1; i <= n; i++) {
+        const tr = document.createElement("tr");
+
+    }})
+
+
+
+    </script>
+</body>
+</html>
